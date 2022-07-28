@@ -2,15 +2,19 @@ import React from 'react';
 import picture1 from '../../assests/Rectangle 5.png';
 import picture2 from '../../assests/Rectangle 5 (1).png';
 import picture3 from '../../assests/Rectangle 5 (2).png';
-import image1 from '../../assests/Rectangle 3 (2).png';
+import image1 from '../../assests/Rectangle 3 (3).png';
 import image2 from '../../assests/Rectangle 3 (1).png';
 import image3 from '../../assests/Rectangle 3.png';
+import image4 from '../../assests/Rectangle 3 (2).png';
 import { GoLocation } from 'react-icons/go';
 import { MdModeEditOutline } from 'react-icons/md';
 import { BiErrorCircle } from 'react-icons/bi';
 import { AiOutlineEye } from 'react-icons/ai';
 import { BsShareFill } from 'react-icons/bs';
 import { AiTwotoneCalendar } from 'react-icons/ai';
+import { BsBag } from 'react-icons/bs';
+import './Card.css';
+
 
 const Card = () => {
     return (
@@ -114,7 +118,7 @@ const Card = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className='d-flex'>
+                            <div className='d-flex fw-bolder'>
                                 <div className='d-flex align-items-center'>
                                     <AiTwotoneCalendar />
                                     <p className='mt-3 ms-2'>Fri, 12 Oct, 2018</p>
@@ -124,10 +128,54 @@ const Card = () => {
                                     <p className='mt-3 ms-2'>Ahmedabad, India</p>
                                 </div>
                             </div>
-                            <button className='p-2 w-100 border-light rounded-pill text-danger'>Visit Website</button>
+                            <button className='rounded-3 bg-white btn-text fw-bold py-2 mb-2'>Visit website</button>
                             <div className='d-flex justify-content-between'>
                                 <div className='d-flex align-items-center mt-4 gap-2'>
                                     <img className='mr-2 mb-2' src={image3} alt='' />
+                                    <p>Sarthak Kamra</p>
+                                </div>
+                                <div className='d-flex align-items-center p-2'>
+                                    <AiOutlineEye className='me-2' />
+                                    <p className='mt-3 me-5'>1.4k views</p>
+                                    <button className='btn bg-light'><BsShareFill /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='row mt-3'>
+                <div className='col-7'>
+                    <div className='card'>
+                        <p className='m-3 fw-bold'>💼️ Job</p>
+                        <div className='card-body'>
+                            <div className='d-flex justify-content-between'>
+                                <h6 className='card-title fs-4'>Software Developer</h6>
+                                <div class="dropdown">
+                                    <button class="btn fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="/">Edit</a></li>
+                                        <li><a class="dropdown-item" href="/">Report</a></li>
+                                        <li><a class="dropdown-item" href="/">option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='d-flex fw-bolder'>
+                                <div className='d-flex align-items-center '>
+                                    <BsBag/>
+                                    <p className='mt-3 ms-2'>Innovaccer Analytics Private Ltd.</p>
+                                </div>
+                                <div className='d-flex align-items-center ms-5'>
+                                    <GoLocation />
+                                    <p className='mt-3 ms-2'>Noida, India</p>
+                                </div>
+                            </div>
+                            <button className='rounded-3 bg-white btn-text-2 fw-bold py-2 mb-2'>Apply on TimesJobs</button>
+                            <div className='d-flex justify-content-between'>
+                                <div className='d-flex align-items-center mt-4 gap-2'>
+                                    <img className='mr-2 mb-2' src={image4} alt='' />
                                     <p>Sarthak Kamra</p>
                                 </div>
                                 <div className='d-flex align-items-center p-2'>
