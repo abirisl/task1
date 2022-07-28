@@ -13,6 +13,7 @@ const Navbar = () => {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                    <div class="navbar-nav mx-auto mb-2 mb-lg-0">
                    <form>
+                    <span></span>
                         <input class="form-control me-2 rounded-pill" style={{width: "360px", backgroundColor: '#F2F2F2'}} type="search" placeholder="Search for your favorite groups in ATG" aria-label="Search" />
                     </form>
                    </div>

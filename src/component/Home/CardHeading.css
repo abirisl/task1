@@ -1,0 +1,19 @@
+.blog-link a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.blog-link a:focus{
+    border-bottom: 3px solid black;
+}
+
+@media screen and (max-width: 576px){
+    .blog-link a{
+        padding: 0px 0px;
+    }
+}

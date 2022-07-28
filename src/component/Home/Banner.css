@@ -27,9 +27,18 @@ color: white;
 .head{
     font-size: 36px;
 }
-.join-button{
-    background-color:  #2F6CE5;
-    width: 125px;
-    height: 36px
-    ;
-}
+
+
+@media screen and (max-width: 576px) {
+    .heading{
+        padding-top: 200px;
+        margin-left: 0px ;
+         color: white;
+    }
+
+    .background{
+        min-height: 35vh;
+        width: 100%;
+    }
+
+ }
