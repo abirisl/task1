@@ -4,6 +4,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import image1 from '../../assests/Group 3.png';
 import google from '../../assests/google.png';
 import facebook from '../../assests/facebook.png';
+import './Modal.css';
 
 
 const Navbar = () => {
@@ -30,16 +31,18 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='modal px-5' id='myModal' >
-                    <div className='modal-dialog'>
+                    <div className='modalCSS modal-dialog-centered'>
                         <div className='modal-content'>
-                            <div className='modal-header text-center' style={{ backgroundColor: '#EFFFF4', color: '#008A45' }}>
-                                <h4 className='small'>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼t</h4>
-                                <button type='button' className='btn-close' data-bs-dismiss='modal'></button>
+                            
+                            <div className='py-3' style={{ backgroundColor: '#EFFFF4', color: '#008A45' }}>
+                                <h5 className='small d-flex justify-content-center'>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h5>
+                                <button type='button' className='closeBtn rounded-circle btn fw-bold' data-bs-dismiss='modal'>X</button>
                             </div>
                             <div className='modal-body'>
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-lg-7">
+                                        <div className="col-lg-6">
+                                        <h3>Create account</h3>
                                             <div className="input-group">
                                                 <input type="text" placeholder='First Name' aria-label="First name" className="form-control" />
                                                 <input type="text" aria-label="Last name" placeholder='Last Name' className="form-control" />
@@ -56,8 +59,10 @@ const Navbar = () => {
                                             </div>
                                         </div>
 
-                                        <div className="col-lg-5">
+                                        <div className="col-lg-6">
+                                            <h5 className='small text-end'>Already have an account? <a href="/">Sign in</a></h5>
                                             <img src={image1} alt='' />
+                                            <small style={{ fontSize: '12px'}}>By signing up, you agree to our Terms & conditions, Privacy policy</small>
                                         </div>
                                     </div>
 
