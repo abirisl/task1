@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from '../../assests/whole.png';
 import { AiOutlineSearch } from 'react-icons/ai';
+import image1 from '../../assests/Group 3.png';
+import google from '../../assests/google.png';
+import facebook from '../../assests/facebook.png';
+
 
 const Navbar = () => {
     return (
@@ -25,32 +29,39 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='modal' id='myModal' >
+                <div className='modal px-5' id='myModal' >
                     <div className='modal-dialog'>
                         <div className='modal-content'>
-                            <div className='modal-header'>
-                                <h4 className='modal-title p-5'>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼t</h4>
+                            <div className='modal-header text-center' style={{ backgroundColor: '#EFFFF4', color: '#008A45' }}>
+                                <h4 className='small'>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼t</h4>
                                 <button type='button' className='btn-close' data-bs-dismiss='modal'></button>
                             </div>
                             <div className='modal-body'>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="First Name" aria-label="Username" />
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-7">
+                                            <div className="input-group">
+                                                <input type="text" placeholder='First Name' aria-label="First name" className="form-control" />
+                                                <input type="text" aria-label="Last name" placeholder='Last Name' className="form-control" />
+                                            </div>
+                                            <div className='mb-3'>
+                                                <input type="email" aria-label="Email" placeholder='Email' className="form-control" />
+                                                <input type="password" aria-label="password" placeholder='Password' className="form-control" />
+                                                <input type="password" aria-label="confirmPassword" placeholder='Confirm Password' className="form-control" />
+                                            </div>
+                                            <div>
+                                                <button className='mb-2 btn btn-primary rounded-pill modal-btn w-100'>Create account</button>
+                                                <button className='mb-2 btn bg-none border rounded modal-btn w-100'> <img className='fb' src={facebook} alt="" /> Sign-up with Facebook</button>
+                                                <button className='mb-2 btn bg-none border rounded modal-btn w-100'> <img className='me-2' width={14} src={google} alt="" /> Sign-up with google</button>
+                                            </div>
+                                        </div>
 
-                                    <input type="text" class="form-control" placeholder="Last Name" aria-label="Server" />
+                                        <div className="col-lg-5">
+                                            <img src={image1} alt='' />
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <input type="text" class="form-control" placeholder="Email" aria-label="Server" /><br />
-                                <input type="text" class="form-control" placeholder="Password" aria-label="Server" />
-                                <br />
-                                <input type="text" class="form-control" placeholder="Confirm Password" aria-label="Server" />
-                            </div>
-                            <div className='m-3'>
-                                <button className='btn btn-primary rounded-pill modal-btn'>Sign-up now</button>
-                            </div>
-                            <div className='m-1'>
-                                <button className='btn bg-none border rounded modal-btn'> <img className='fb' src=".." alt="" /> Sign-up with Facebook</button>
-                            </div>
-                            <div className='m-1'>
-                                <button className='btn bg-none border rounded modal-btn'> <img className='google' src="..." alt="" /> Sign-up with google</button>
                             </div>
                         </div>
                     </div>
